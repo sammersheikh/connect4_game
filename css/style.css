@@ -1,0 +1,129 @@
+body {
+    font-family: 'Gugi';
+    background-color: burlywood;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table {
+    border-style: solid;
+    border-color: #444342;
+    width: 810px;
+    height: 810px;
+    box-shadow: 5px 10px 5px #6d6666;
+}
+
+
+tr {
+    text-align: center;
+}
+
+td {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button-56 {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.gamePiece {
+    border-radius: 50%;
+    border-style: solid;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    box-shadow: 4px 4px 4px #4e3c3ca8;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    z-index: 1;
+    margin: auto;
+}
+
+td, th, .ff-fix {
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+td:hover::after,
+.ff-fix:hover::after { 
+    background-color: rgba(225, 225, 216, 0.146);
+    content: '\00a0';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
+
+/* CSS */
+#newBtn {
+  background-color: rgb(230, 189, 139);
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #000000 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#newBtn:hover {
+  background-color: tan;
+}
+
+#newBtn:active {
+  box-shadow: #422800 5px 5px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    #newBtn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+    table {
+        height: 390px;
+        table-layout: fixed;
+        width: 390px;
+    }
+    div.gamePiece {
+        height: 42px;
+        width: 42px;
+    }
+}
